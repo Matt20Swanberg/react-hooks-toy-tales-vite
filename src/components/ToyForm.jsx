@@ -1,9 +1,21 @@
 import React, { useState } from "react";
 
+/**
+ * Form used to create a new toy.
+ * @param {Function} addToy - Callback used to add a toy to App state.
+ */
 function ToyForm({ addToy }) {
 
+  // Stores the toy name
   const [name, setName] = useState("");
+
+  // Stores the toy image URL
   const [image, setImage] = useState("");
+
+  /**
+ * Submits a new toy to the API.
+ * @param {Event} e - Form submit event.
+ */
 
   function handleSubmit(e) {
     e.preventDefault();

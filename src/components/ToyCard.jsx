@@ -1,5 +1,8 @@
 import React from "react";
 
+/**
+ * Displays an individual toy and its actions.
+ */
 function ToyCard({ id, name, image, likes, deleteToy, updateLikes }) {
   return (
     <div className="card" data-testid="toy-card">
